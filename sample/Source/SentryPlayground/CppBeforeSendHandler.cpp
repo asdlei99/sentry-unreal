@@ -9,5 +9,7 @@ USentryEvent* UCppBeforeSendHandler::HandleBeforeSend_Implementation(USentryEven
 {
 	UE_LOG(LogTemp, Log, TEXT("Hello from CPP beforeSend handler"));
 
+	Event->SetMessage(TEXT("Override unit test message for testing"));
+
 	return Super::HandleBeforeSend_Implementation(Event, Hint);
 }

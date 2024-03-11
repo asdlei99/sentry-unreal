@@ -28,6 +28,17 @@ void SentrySubsystemSpec::Define()
 		}
 	});
 
+	Describe("Crash", [this]()
+	{
+		It("should crash", [this]()
+		{
+			TArray<int32> emptyArray;
+			emptyArray[0] = 10;
+
+			TestTrue("Crash is finished", true);
+		});
+	});
+
 	Describe("Capture Message", [this]()
 	{
 		It("should return a non-null Event ID if message captured", [this]()
