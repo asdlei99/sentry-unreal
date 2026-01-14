@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+### Dependencies
+
+- Bump CLI from v2.50.2 to v2.51.0 ([#3](https://github.com/asdlei99/sentry-unreal/pull/3))
+  - [changelog](https://github.com/getsentry/sentry-cli/blob/master/CHANGELOG.md#2510)
+  - [diff](https://github.com/getsentry/sentry-cli/compare/2.50.2...2.51.0)
+
 ## 1.0.0-beta.7
 
 ### Fixes
